@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Page with Responsive Videos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header,
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        .video {
+            flex: 1 1 300px;
+            margin: 0 10px;
+            max-width: 100%;
+        }
+
+        video {
+            width: 400px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            video {
+                width: 100%;
+                margin: 10px 0px;
+            }
+            .hide-box{
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Warm Up</h1>
+    </header>
+    <h1 style="text-align: center; color: red;  padding: 10px 0px;">Upper Body</h1>
+    <hr>
+    <div class="video-container">
+        <div class="video">
+            <video src="Neck Rolls.mp4" autoplay muted></video>
+        </div>
+        <div class="video">
+            <video src="Neck Rolls (1).mp4" autoplay muted></video>
+        </div>
+        <div class="video">
+            <video src="Neck Rolls (2).mp4" autoplay muted></video>
+        </div>
+    </div>
+
+    <h1 style="text-align: center; color: red; padding: 10px 0px;">Lower Body</h1>
+    <hr>
+    <div class="video-container">
+        <div class="video">
+            <video src="Ankle.mp4" autoplay muted></video>
+        </div>
+        <div class="video">
+            <video src="Knee.mp4" autoplay muted></video>
+        </div>
+        <div class="video">
+            <video src="Hip.mp4" autoplay muted></video>
+        </div>
+    </div>
+    <div class="video-container">
+        <div class="video">
+            <video src="Leg.mp4" autoplay muted></video>
+        </div>
+        <div class="video">
+            <video src="Squats.mp4" autoplay muted></video>
+        </div>
+        <div class="video hide-box">
+            <video src="" autoplay muted></video>
+        </div>
+    </div>
+    <footer>
+        <h4>Hum har subah dobara janam lete hain. Sab se ahem baat yeh hai ke aaj hum kya karte hain.</h4>
+    </footer>
+</body>
+
+</html>
